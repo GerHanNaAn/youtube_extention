@@ -14,7 +14,7 @@ const rangeElem = `
 `;
 const wrap = document.createElement('div');
 wrap.style =
-  'position: fixed; z-index: 9999; top: 0; left: 0; padding: 10px; background-color: tomato;';
+	'position: fixed; z-index: 9999; top: 0; left: 0; padding: 10px; background-color: tomato;';
 wrap.innerHTML = rangeElem;
 
 document.body.prepend(wrap);
@@ -28,10 +28,10 @@ speedValueHtml.innerHTML = `Speed: ${speedValue}`;
 wrap.append(speedValueHtml);
 
 rangeHTML.addEventListener('input', (e) => {
-  speedValue = e.target.value;
-  speedValueHtml.innerHTML = `Speed: ${speedValue}`;
-  console.log(speedValue);
-  document.getElementsByClassName('video-stream html5-main-video')[0].playbackRate = speedValue;
+	speedValue = e.target.value;
+	speedValueHtml.innerHTML = `Speed: ${speedValue}`;
+	console.log(speedValue);
+	document.getElementsByClassName('video-stream html5-main-video')[0].playbackRate = speedValue;
 });
 
 // console.log(chrome.tabs.create({ url: 'https://www.youtube.com/' }));
@@ -40,4 +40,3 @@ rangeHTML.addEventListener('input', (e) => {
 // });
 console.log(1111);
 console.log(1111);
-// console.log(chrome.runtime.getUrl('style.css'));
