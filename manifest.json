@@ -6,11 +6,12 @@
     {
       "matches": ["<all_urls>"],
       "run_at": "document_idle",
-      "js": ["script.js", "popup.js"],
+      "js": ["script.js"],
       "css": ["style.css"]
     }
   ],
   "permissions": ["storage", "tabs", "activeTab", "scripting"],
+  "host_permissions": ["<all_urls>"],
   "action": {
     "default_popup": "popup.html",
     "default_title": "__MSG_name__",

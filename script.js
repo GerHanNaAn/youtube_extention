@@ -39,3 +39,5 @@ rangeHTML.addEventListener('input', (e) => {
 //   chrome.tabs.create({ url: 'https://www.youtube.com/' });
 // });
 console.log(1111);
+console.log(1111);
+// console.log(chrome.runtime.getUrl('style.css'));
