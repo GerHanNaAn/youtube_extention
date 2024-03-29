@@ -16,3 +16,4 @@ btn.addEventListener('click', () => {
   console.log('click');
   chrome.tabs.create({ url: 'https://www.youtube.com/' });
 });
+console.log('test');
