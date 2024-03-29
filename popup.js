@@ -1,5 +1,12 @@
 const btn = document.getElementById('visibleBtn');
-console.log(chrome);
+btn.addEventListener('click', async () => {
+  let res = '2222';
+  await chrome.storage.local.set({ speedExtVisible: false });
+  await chrome.storage.local.get('speedExtVisible').then((e) => {
+    res = e;
+    console.log(res);
+  });
+});
 // setTimeout(() => {
 //   console.log(сhrome.storage);
 // }, 1000);
