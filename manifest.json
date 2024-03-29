@@ -10,7 +10,7 @@
       "css": ["style.css"]
     }
   ],
-  "permissions": ["storage", "tabs", "activeTab", "scripting"],
+  "permissions": ["activeTab", "contextMenus", "storage", "scripting"],
   "host_permissions": ["<all_urls>"],
   "action": {
     "default_popup": "popup.html",
