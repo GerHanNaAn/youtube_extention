@@ -13,7 +13,6 @@ console.log(document);
 const btn = document.getElementById('visibleBtn');
 
 btn.addEventListener('click', () => {
-  console.log('click');
-  chrome.tabs.create({ url: 'https://www.youtube.com/' });
+	console.log('click');
+	chrome.tabs.create({ url: 'https://www.youtube.com/' });
 });
-console.log('test');
