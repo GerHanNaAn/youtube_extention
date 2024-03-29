@@ -4,17 +4,21 @@
   "version": "0.1.0",
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
+      "matches": ["https://www.youtube.com/*"],
       "run_at": "document_idle",
-      "js": ["script.js"],
-      "css": ["style.css"]
+      "js": ["script.js"]
     }
   ],
-  "permissions": ["activeTab", "contextMenus", "storage", "scripting"],
+  "icons": {
+    "16": "/assets/pepe.png"
+  },
+  "permissions": ["activeTab", "contextMenus", "storage", "scripting", "tabs"],
   "host_permissions": ["<all_urls>"],
   "action": {
-    "default_popup": "popup.html",
     "default_title": "__MSG_name__",
     "all_frames": true
+  },
+  "background": {
+    "service_worker": "background.js"
   }
 }

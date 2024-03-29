@@ -14,7 +14,8 @@ const rangeElem = `
 `;
 const wrap = document.createElement('div');
 wrap.style =
-  'position: fixed; z-index: 9999; top: 0; left: 0; padding: 10px; background-color: tomato;';
+  'position: fixed; z-index: 9999; top: 0; left: 0; padding: 10px; display: none; background-color: tomato;';
+wrap.setAttribute('id', 'speed_ext_wrap');
 wrap.innerHTML = rangeElem;
 
 document.body.prepend(wrap);
@@ -33,7 +34,3 @@ rangeHTML.addEventListener('input', (e) => {
 
   document.getElementsByClassName('video-stream html5-main-video')[0].playbackRate = speedValue;
 });
-
-chrome.storage.session.get(['yt-player-volume']).then((e) => console.log(e));
-
-console.log(1111);
